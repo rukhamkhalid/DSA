@@ -2,8 +2,8 @@
 using namespace std;
 struct node
 {
-	int data;
-	node *next;
+	 int data;
+	 node *next;
 };class linkedList
 {
 	node*head,*curr;
@@ -31,7 +31,8 @@ struct node
 		{
 			cout<<curr->data<<"->";
 			curr=curr->next;
-		}cout<<"NULL";}
+		}cout<<"NULL";
+		}
 		};int main()
 		{
 			linkedList obj;
@@ -40,4 +41,5 @@ struct node
 			obj.insert(93);
 			obj. insert(18);
 			obj.display();
+			
 		}
