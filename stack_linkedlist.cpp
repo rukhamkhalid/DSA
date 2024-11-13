@@ -45,7 +45,7 @@ struct node
     	
     	
     	cout<<"top element "  << st.peek()<<endl;
-    	cout<<"Removing element is"<<endl;
+    	cout<<"Removing element is"<<st.pop()<<endl;
     	st.pop();
     	st.pop();
     	return 0;

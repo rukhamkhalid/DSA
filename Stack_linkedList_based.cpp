@@ -29,6 +29,7 @@ class Stack{
 			delete temp;
 		}
 		
+		
 		void display(){
 			curr = top;
 			while(curr){
@@ -45,8 +46,9 @@ int main (){
 	test.push(203);
 	test.push(205);
 	test.push(206);
-
+    test.push(209);
 	test.display();
+	cout<<endl;
 	cout<<endl;
 	test.pop();
 	

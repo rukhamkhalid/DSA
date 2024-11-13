@@ -1,11 +1,13 @@
+//Queue array base
+
 #include<iostream>
 using namespace std;
 
-int Queue[5];
+int Queue[8];
 int mark=-1;
 void enqueue(int d)
 {
-	if(mark==4)
+	if(mark==7)
 	 cout<<"Queue is full"<<endl;
 	else{
 		mark++;
@@ -28,14 +30,16 @@ void enqueue(int d)
 	 cout<<Queue[i]<<"->";
 }bool isEmpty()
 {
-	if(mark==-1)
+	if(mark==-1){
 	return true;
+	}
 	return false;
 	
 }bool isFull()
 {
-	if(mark==4)
-	return true;
+	if(mark==7){
+	
+	return true;}
 	return false;
 	
 };
@@ -43,18 +47,25 @@ int main()
 {
 	enqueue(10);
 	enqueue(20);
-	dequeue();
-	enqueue(30);
-	dequeue();
-	dequeue();
-	enqueue(40);
-	enqueue(50);
-	dequeue();
-	dequeue();
-	dequeue();
+	//dequeue();
 	enqueue(100);
+	//dequeue();
+	//dequeue();
+//	enqueue(40);
+	enqueue(50);
+	enqueue(60);
+	enqueue(70);
+	enqueue(80);
+	enqueue(90);
+	//enqueue(100);
+	
+	cout<<"before dequeue"<<endl;
+	traversal();
+	cout<<endl;
+	dequeue();
+	dequeue();
+	cout<<"after deque"<<endl;
 	traversal();
 	return 0;
-	
 	
 }
